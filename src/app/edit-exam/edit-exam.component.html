@@ -1,0 +1,49 @@
+<form [formGroup]="examFormGroup">
+    <div class="flex-layout m-t-10">
+        <mat-label>Exam Key</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="examKey">
+        </mat-form-field>
+    </div>
+
+    <div class="flex-layout m-t-10">
+        <mat-label>Patient Key</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="patientKey">
+        </mat-form-field>
+    </div>
+
+
+    <div class="flex-layout m-t-10">
+        <mat-label>Exam Locked</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="isLocked">
+        </mat-form-field>
+    </div>
+
+
+    <div class="flex-layout m-t-10">
+        <mat-label>Exam Status Code</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="examStatusCode">
+        </mat-form-field>
+    </div>
+
+    <div class="flex-layout m-t-10">
+        <mat-label>Patient Sex</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="patientSexCode">
+        </mat-form-field>
+    </div>
+
+    <div class="flex-layout m-t-10">
+        <mat-label>Exam Age</mat-label>
+        <mat-form-field> 
+                <input matInput formControlName="examAge">
+        </mat-form-field>
+    </div>
+
+</form>
+
+<button mat-button color='accent' (click)='onSave()' [disabled]="examFormGroup.pristine || !examFormGroup.valid">Save</button>
+<button mat-button mat-dialog-close (click)='onClose()'>Close</button>

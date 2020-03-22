@@ -1,0 +1,89 @@
+
+$background: (
+    status-bar: green,
+    app-bar:    #383838,
+    dialog-background:    #383838,
+    background: #212121,
+    hover:      rgba(white, 0.04),
+    card:       #171717,
+    chip-background: #d6d6d6,
+    content-background:     #171717,
+    dialog:     #171717,
+    // disabled-button: $white-12-opacity,
+    // raised-button: map-get($mat-grey, 800),
+    // focused-button: $white-6-opacity,
+    // selected-button: map_get($mat-grey, 900),
+    // selected-disabled-button: map_get($mat-grey, 800),
+    disabled-button-toggle: black,
+    // unselected-chip: map_get($mat-grey, 700),
+    disabled-list-option: black,
+    cockpit-item: #424242,
+    side-bar: #171717, //sidebar
+      tabs-header : #2b2b2b, //tabs header
+    slide-toggle-thumb: white,
+    toggle-button-not-checked: rgba(#595959, 0.55),
+    radio-button-not-checked: #696969,
+    select-box: #696969,
+    drag-and-drop: #696969,
+    select-box-options: #383838,
+    table-selected-row:#787878,
+    input-background:transparent,
+    input-border:transparent,
+    notification-block: #383838,
+    window-border: #7b7b7b,
+    table-header-box-shadow: rgba(black, 0.2),
+    highlighted-control: #F2A200,
+    monitor1:#ef1011,
+    monitor2:#1010ef,
+    monitor3:#56ba64,
+    monitor4:#efba00,
+    popover-background: #454545
+  
+  );
+  
+  $foreground: (
+    base:              #d6d6d6,
+    base-on-dark:      #d6d6d6,
+    divider:           rgba(255, 255, 255, 0.12),
+    // dividers:          $white-12-opacity,
+    disabled:          rgba(white, 0.3),
+    disabled-button:   rgba(white, 0.3),
+    disabled-text:     rgba(white, 0.3),
+    hint-text:         rgba(white, 0.3),
+    secondary-text:    #d6d6d6,
+    quiet-secondary-text: #d6d6d6,
+    icon:              rgba(214, 214, 214, 0.8),
+    icons:             rgba(214, 214, 214, 0.8),
+    text:              #d6d6d6,
+    headline:          #d6d6d6,
+    subheading-2:      #d6d6d6,
+    body-1:            #d6d6d6,
+    body-1-on-dark:    #d6d6d6,
+    body-2:            #d6d6d6,
+    body-2-on-dark:    #d6d6d6,
+    datepicker-icon:   #d6d6d6,
+    select-arrow:      white,
+    slider-min:        white,
+    slider-off:        rgba(white, 0.3),
+    slider-off-active: rgba(white, 0.3),
+    checkbox-label:    #d6d6d6,
+    checkbox-v:        white,
+    input:             #d6d6d6,
+    link:              #9DD3E3,
+    link-hover:        #DAF1F7,
+    link-pressed:      #FFFFFF
+  );
+  
+  // instead of creating a theme with mat-light-theme like a sane person,
+  // we will create our own theme-creating function that lets us apply our own foreground and background palettes.
+  @function create-dark-theme($primary, $accent, $warn) {
+    @return (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+      is-dark: true,
+      foreground: $foreground,
+      background: $background
+    );
+  }
+  

@@ -1,0 +1,128 @@
+// /* You can add global styles to this file, and also import other style files */
+
+// @import './theme/dark-theme';
+// @import '~@angular/material/theming';
+// // Do css reset and delete many defaults that browsers have (see https://github.com/necolas/normalize.css/)
+// @import '~normalize.css/normalize.css';
+// // Material icons offline
+// @import "~material-design-icons-iconfont/dist/material-design-icons.css";
+
+// $md-primary: (
+//     50 : #e3eef4,
+//     100 : #b9d5e4,
+//     200 : #8abad2,
+//     300 : #5b9ebf,
+//     400 : #3789b2,
+//     500 : #1474a4,
+//     600 : #126c9c, 
+//     700 : #0e6192,
+//     800 : #0b5789,
+//     900 : #064478,
+//     A100 : #a7d2ff,
+//     A200 : #74b8ff,
+//     A400 : #419eff,
+//     A700 : #2791ff,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #ffffff,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #ffffff,
+//     )
+// );
+
+// $md-accent: (
+//     50 : #ededed,
+//     100 : #d2d2d2,
+//     200 : #b4b4b4,
+//     300 : #969696,
+//     400 : #808080,
+//     500 : #696969,
+//     600 : #616161,
+//     700 : #565656,
+//     800 : #4c4c4c,
+//     900 : #3b3b3b,
+//     A100 : #f4a0a0,
+//     A200 : #ef7272,
+//     A400 : #ff3030,
+//     A700 : #ff1616,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #000000,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #ffffff,
+//         A700 : #ffffff,
+//     )
+// );
+
+
+// $md-warn: (
+//     50 : #fff6e8,
+//     100 : #ffe9c6,
+//     200 : #ffdba0,
+//     300 : #ffcc79,
+//     400 : #ffc15d,
+//     500 : #ffb640,
+//     600 : #ffaf3a,
+//     700 : #ffa632,
+//     800 : #ff9e2a,
+//     900 : #ff8e1c,
+//     A100 : #ffffff,
+//     A200 : #ffffff,
+//     A400 : #ffe5cd,
+//     A700 : #ffd7b3,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #000000,
+//         500 : #000000,
+//         600 : #000000,
+//         700 : #000000,
+//         800 : #000000,
+//         900 : #000000,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
+
+
+// // define 3 theme color
+// // mat-palette accepts $palette-name, main, lighter and darker variants
+// $theme-primary: mat-palette($md-primary); 
+// $theme-accent: mat-palette($md-accent);
+// $theme-warn: mat-palette($md-warn);
+
+// $dark-theme: create-dark-theme($theme-primary,$theme-accent,$theme-warn);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+// // Default Theme
+// .rws-dark-theme {
+//     @include angular-material-theme($dark-theme);
+ // }
+  

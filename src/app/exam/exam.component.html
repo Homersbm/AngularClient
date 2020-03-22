@@ -1,0 +1,48 @@
+<p>Exam Lookup</p>
+
+<table  mat-table  [dataSource]="examList">
+    <ng-container matColumnDef="examKey">
+        <th mat-header-cell *matHeaderCellDef> Exam Key </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.examKey}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="patientKey">
+        <th mat-header-cell *matHeaderCellDef> Patient Key </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.patientKey}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="isLocked">
+        <th mat-header-cell *matHeaderCellDef> Locked </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.isLocked}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="examStatusCode">
+        <th mat-header-cell *matHeaderCellDef> Exam StatusCode </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.examStatusCode}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="patientSexCode">
+        <th mat-header-cell *matHeaderCellDef> Patient SexCode </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.patientSexCode}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="examAge">
+        <th mat-header-cell *matHeaderCellDef> Exam Age </th>
+        <td mat-cell *matCellDef="let exam"> {{exam.examAge}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="deletebutton">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let row">
+            <mat-icon class="material-icons" (click)="deleteExam(row)">delete</mat-icon>
+        </mat-cell>
+    </ng-container>
+
+      <!-- <mat-row  *matRowDef="let row; columns: displayedColumns;" (click)="getExamRecord(row)"></mat-row> -->
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (dblclick)="getExamRecord(row)" ></tr>
+
+    </table>
